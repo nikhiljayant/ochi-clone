@@ -8,6 +8,7 @@ const LandingPage = () => {
           <h1 className="uppercase text-9xl font-['Founders_Grotesk']">
             WE CREATE
           </h1>
+          {/* 31:25 */}
         </div>
       </div>
     </div>
