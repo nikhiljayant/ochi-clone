@@ -10,14 +10,28 @@ const Featured = () => {
       </div>
       <div className="px-20">
         <div className="cards w-full flex gap-10 mt-10">
-          <div className="cardcontainer w-1/2 h-[75vh]">
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="text-[#CDEA68] absolute left-full -translate-x-1/2 top-1/2 -translate-y-1/2 text-8xl">
+              FYDE
+            </h1>
             <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img className="w-full h-full bg-cover" src="https://ochi.design/wp-content/uploads/2024/08/CS_Website_1-1326x1101.png" alt="" />
+              <img
+                className="w-full h-full bg-cover"
+                src="https://ochi.design/wp-content/uploads/2024/08/CS_Website_1-1326x1101.png"
+                alt=""
+              />
             </div>
           </div>
-          <div className="cardcontainer w-1/2 h-[75vh]">
+          <div className="cardcontainer relative w-1/2 h-[75vh]">
+            <h1 className="text-[#CDEA68] absolute right-full translate-x-1/2 top-1/2 -translate-y-1/2 text-8xl">
+              VISE
+            </h1>
             <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img className="w-full h-full bg-cover" src="https://ochi.design/wp-content/uploads/2024/08/Frame-481692-1-1326x1101.png" alt="" />
+              <img
+                className="w-full h-full bg-cover"
+                src="https://ochi.design/wp-content/uploads/2024/08/Frame-481692-1-1326x1101.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
