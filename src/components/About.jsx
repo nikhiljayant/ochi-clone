@@ -1,6 +1,7 @@
 import React from "react";
 
 const About = () => {
+  // 2:38:50
   return (
     <div className="w-full p-20 bg-[#CDEA68] rounded-t-3xl text-black">
       <h1 className="font-['Neue_Montreal] text-[3.5vw] leading-[4.5vw] tracking-tight">
@@ -17,7 +18,11 @@ const About = () => {
           </button>
         </div>
         <div className="w-1/2 h-[70vh]">
-          <img className="w-full h-full rounded-3xl object-cover" src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" alt="img" />
+          <img
+            className="w-full h-full rounded-3xl object-cover"
+            src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
+            alt="img"
+          />
         </div>
       </div>
     </div>

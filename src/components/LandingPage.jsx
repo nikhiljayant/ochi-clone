@@ -1,18 +1,28 @@
 import React from "react";
 // Icons
 import { FaArrowUpLong } from "react-icons/fa6";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <div data-scroll daya-scroll-section data-scroll-speed="-.3" className="w-full h-screen bg-zinc-900 pt-1">
       <div className="textstructure mt-52 px-20">
         {["We Create", "Eye Opening", "Presentations"].map((txt, index) => (
           <div key={txt} className="masker">
             <div className="w-fit flex items-center">
               {index === 1 && (
-                <div className="w-[10vw] relative top-[.5vw] mr-2">
-                  <img src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" className="rounded-md" />
-                </div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "9vw" }}
+                  transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                  className="w-[10vw] relative top-[.5vw] mr-2"
+                >
+                  <img
+                    src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg"
+                    className="rounded-md"
+                  />
+                </motion.div>
               )}
               <h1 className="uppercase text-[9vw] leading-[7vw] font-['Test_Founders_Grotesk_X_Condensed'] font-medium">
                 {txt}
